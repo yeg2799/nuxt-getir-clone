@@ -17,6 +17,7 @@ import nuxt_plugin_plugin_cda51570 from 'nuxt_plugin_plugin_cda51570' // Source:
 import nuxt_plugin_nuxtsvgsprite_7ffe01d8 from 'nuxt_plugin_nuxtsvgsprite_7ffe01d8' // Source: ./nuxt-svg-sprite.js (mode: 'all')
 import nuxt_plugin_image_67ba7c71 from 'nuxt_plugin_image_67ba7c71' // Source: ./image.js (mode: 'all')
 import nuxt_plugin_component_9f70f064 from 'nuxt_plugin_component_9f70f064' // Source: ../plugins/component.js (mode: 'all')
+import nuxt_plugin_vueslickcarousel_0c02c5e7 from 'nuxt_plugin_vueslickcarousel_0c02c5e7' // Source: ../plugins/vue-slick-carousel.js (mode: 'all')
 import nuxt_plugin_meta_45fbfb4c from 'nuxt_plugin_meta_45fbfb4c' // Source: ./composition-api/meta.mjs (mode: 'all')
 
 // Component: <ClientOnly>
@@ -199,6 +200,10 @@ async function createApp(ssrContext, config = {}) {
 
   if (typeof nuxt_plugin_component_9f70f064 === 'function') {
     await nuxt_plugin_component_9f70f064(app.context, inject)
+  }
+
+  if (typeof nuxt_plugin_vueslickcarousel_0c02c5e7 === 'function') {
+    await nuxt_plugin_vueslickcarousel_0c02c5e7(app.context, inject)
   }
 
   if (typeof nuxt_plugin_meta_45fbfb4c === 'function') {

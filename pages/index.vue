@@ -1,6 +1,10 @@
 <template lang="pug">
 .gt-main-page
-  span getir
+  vue-slick-carousel(:arrows="true" :dots="true")
+    div 1
+    div 2
+    div 3
+    div 4
 </template>
 
 <script>

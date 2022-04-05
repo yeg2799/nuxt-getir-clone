@@ -23,6 +23,10 @@ export const routerOptions = {
     component: _31803e24,
     name: "icons-list"
   }, {
+    path: "/_icons",
+    component: _31803e24,
+    name: "icons-list"
+  }, {
     path: "/",
     component: _1a811490,
     name: "main-page"

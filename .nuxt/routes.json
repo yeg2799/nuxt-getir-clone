@@ -6,6 +6,12 @@
     "_name": "_31803e24"
   },
   {
+    "name": "icons-list",
+    "path": "/_icons",
+    "component": "/Users/yunusemre.guzel/Desktop/Kişisel Projeler/nuxt-getir-clone/node_modules/@nuxtjs/svg-sprite/lib/pages/icons-list.vue",
+    "_name": "_31803e24"
+  },
+  {
     "name": "main-page",
     "path": "/",
     "component": "/Users/yunusemre.guzel/Desktop/Kişisel Projeler/nuxt-getir-clone/pages/index",
