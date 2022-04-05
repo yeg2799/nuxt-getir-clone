@@ -1,8 +1,9 @@
+export { default as HeaderMenu } from '../../components/Header/header-menu.vue'
 export { default as ButtonTwButton } from '../../components/button/tw-button.vue'
+export { default as IconTwIcon } from '../../components/icon/tw-icon.vue'
 export { default as ImageTwImageCard } from '../../components/image/tw-image-card.vue'
 export { default as LinkTwLink } from '../../components/link/tw-link.vue'
 export { default as TextFieldTwTextField } from '../../components/text-field/tw-text-field.vue'
-export { default as IconTwIcon } from '../../components/icon/tw-icon.vue'
 
 // nuxt/nuxt.js#8607
 function wrapFunctional(options) {

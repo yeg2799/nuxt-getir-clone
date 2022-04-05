@@ -4,7 +4,7 @@ export default {
   router,
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'Getir',
+    title: 'Getir - Dakikalar İçinde Kapınızda',
     htmlAttrs: {
       lang: 'en',
     },
