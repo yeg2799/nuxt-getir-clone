@@ -17,7 +17,7 @@ export default {
     link: [{ rel: 'icon', type: 'image/x-icon', href: 'https://getir.com/images/icons/favicon-32x32.png' }],
   },
 
-  css: ['bootstrap/dist/css/bootstrap.css'],
+  css: ['bootstrap/dist/css/bootstrap.css', '@/assets/css/main.css'],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: ['@/plugins/component.js'],
@@ -31,6 +31,7 @@ export default {
     '@nuxtjs/composition-api/module',
     '@nuxtjs/svg',
     '@nuxt/image',
+    '@nuxt/postcss8',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -40,8 +41,14 @@ export default {
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {},
-
+  build: {
+    postcss: {
+      plugins: {
+        tailwindcss: {},
+        autoprefixer: {},
+      },
+    },
+  },
   image: {
     domains: ['nuxtjs.org'],
     dir: 'assets/images',

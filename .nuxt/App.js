@@ -8,6 +8,8 @@ import NuxtBuildIndicator from './components/nuxt-build-indicator'
 
 import '../node_modules/bootstrap/dist/css/bootstrap.css'
 
+import '../assets/css/main.css'
+
 import _1c3006c4 from './layouts.svg-sprite.4885bd66.vue'
 import _6f6c098b from '../layouts/default.vue'
 

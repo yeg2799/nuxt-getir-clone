@@ -1,13 +1,18 @@
 <template lang="pug">
   .layout(:style="{ height: `${layoutHeight}px` }")
-      Nuxt
+    header-menu
+    Nuxt
 </template>
 
 <script>
 import { onMounted, ref, onUnmounted } from '@nuxtjs/composition-api';
+import HeaderMenu from '@/components/header/header-menu.vue';
 
 export default {
   middleware: 'main',
+  components: {
+    HeaderMenu,
+  },
   setup() {
     const layoutHeight = ref('');
     const handleResize = () => {

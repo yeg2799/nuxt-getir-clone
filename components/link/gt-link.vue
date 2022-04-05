@@ -1,5 +1,5 @@
 <template lang="pug">
-.tw-link
+.gt-link
   a(v-if="isAbsoluteLink" :href="link" :target="target")
     slot
   a(v-else-if="externalLink" :href="link" :target="target")
@@ -52,7 +52,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.tw-link {
+.gt-link {
   a {
     color: #fff;
     text-decoration: none;
