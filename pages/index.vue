@@ -31,6 +31,9 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
+.gt-main-page {
+  height: 47.5px;
+}
 .categories-wrapper {
   .categories-header {
     padding: 10px 0 0 10px;

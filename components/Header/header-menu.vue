@@ -39,11 +39,15 @@ export default {
 
 <style lang="scss" scoped>
 .header-menu-wrapper {
+    position: fixed;
+    top: 0;
     background: #4C3398;
     color: #D5D3FB;
     font-size: 15px;
     font-weight: 700;
     padding: 5px 0px 0px;
+    width: 100%;
+    z-index: 999;
     .header-menu {
         display: flex;
         justify-content: space-between;
