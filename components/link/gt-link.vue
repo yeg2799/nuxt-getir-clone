@@ -4,7 +4,7 @@
     slot
   a(v-else-if="externalLink" :href="link" :target="target")
     slot
-  nuxt-link(v-else :to="link" :exact="exact" :exact-path="exactPath" :active-class="activeClass")
+  nuxt-link(v-else :to="link" :exact="exact" :exact-path="exactPath" :active-class="activeClass" :class="customClass")
     slot
 </template>
 
@@ -38,6 +38,10 @@ export default {
       type: Boolean,
       default: false,
     },
+    customClass: {
+      type: String,
+      default: '',
+    }
   },
   setup(props) {
     const absoluteLinkRegex = /^(?:[a-z]+:)?\/\//;
@@ -54,7 +58,6 @@ export default {
 <style lang="scss" scoped>
 .gt-link {
   a {
-    color: #fff;
     text-decoration: none;
   }
 }

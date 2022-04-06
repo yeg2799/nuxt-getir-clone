@@ -14,7 +14,7 @@
       .categories-header
         span Kategoriler
       .categories-list
-          tw-link.categories-list-item(v-for="item in categorieDataList" :key="item.id" :link="item.link")
+          gt-link(v-for="item in categorieDataList" :key="item.id" :link="item.url" customClass="categories-list-item")
             tw-image-card.item-image(:src="item.img")
             span {{ item.title}}
 </template>
@@ -30,7 +30,7 @@ export default {
   }
 };
 </script>
-<style lang="scss" scoped>
+<style lang="scss">
 .gt-main-page {
   height: 47.5px;
 }
@@ -43,13 +43,16 @@ export default {
     flex-wrap: wrap;
     font-size: 15px;
     font-weight: 700;
+    .gt-link {
+      width: 125px;
+    }
     &-item {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      margin-right: 15px;
-      padding: 10px 10px 20px;
+      margin-right: 55px;
+      padding: 10px 5px 20px;
       border-radius: 4px;
       &:last-child {
         margin-right: 0;
