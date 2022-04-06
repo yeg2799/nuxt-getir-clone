@@ -2,19 +2,19 @@
   "ButtonTwButton": {
     "description": "Auto imported from components/button/tw-button.vue"
   },
+  "IconTwIcon": {
+    "description": "Auto imported from components/icon/tw-icon.vue"
+  },
   "HeaderMenu": {
     "description": "Auto imported from components/header/header-menu.vue"
   },
-  "IconTwIcon": {
-    "description": "Auto imported from components/icon/tw-icon.vue"
+  "ImageTwImageCard": {
+    "description": "Auto imported from components/image/tw-image-card.vue"
   },
   "LinkGtLink": {
     "description": "Auto imported from components/link/gt-link.vue"
   },
   "TextFieldTwTextField": {
     "description": "Auto imported from components/text-field/tw-text-field.vue"
-  },
-  "ImageTwImageCard": {
-    "description": "Auto imported from components/image/tw-image-card.vue"
   }
 }

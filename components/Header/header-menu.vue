@@ -1,10 +1,14 @@
 <template lang="pug">
   .header-menu-wrapper
-    .container.pl-4.pr-4
-        .header-menu-item
+    .container.pl-4.pr-4.header-menu
+        .header-menu-item.left-menu
             gt-link.item(v-for="menu in menus" :key="menu.id" :link="menu.link" :class="{ 'active': route.path === menu.link }")
                 span.title getir
                 span.subTitle {{ menu.subTitle}}
+        .right-menu
+            .right-menu-item(v-for="menu in rightMenus" :key="menu.id")
+                tw-icon(:icon="menu.icon" size="15")
+                span {{ menu.title }}
 </template>
 
 <script>
@@ -44,9 +48,28 @@ export default {
                 link: '/carsi',
             },
         ];
+        const rightMenus = [
+            {
+                id: 0,
+                icon: 'lang',
+                title: 'Türkçe (TR)',
+            },
+            {
+                id: 1,
+                icon: 'profile',
+                title: 'Giriş Yap',
+            },
+            {
+                id: 2,
+                icon: 'user-add',
+                title: 'Kayıt Ol',
+            },
+        ];
+
         return {
             route,
             menus,
+            rightMenus,
         };
     },
 }
@@ -55,38 +78,60 @@ export default {
 <style lang="scss" scoped>
 .header-menu-wrapper {
     background: #4C3398;
-
+    color: #D5D3FB;
+    font-size: 15px;
+    font-weight: 700;
     padding: 5px 0px 0px;
-    .header-menu-item {
+    .header-menu {
         display: flex;
-        flex-direction: row;
-        align-items: center;
-        .item {
-            padding: 10px 20px;
-            margin-right: 2px;
-            cursor: pointer;
-            span {
-                font-size: 15px;
-                font-weight: 700;
-                color: #D5D3FB;
+        justify-content: space-between;
+        .header-menu-item.left-menu {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            .item {
+                padding: 10px 20px;
+                margin-right: 2px;
+                cursor: pointer;
+                span {
+                    font-size: 15px;
+                    font-weight: 700;
+                    color: #D5D3FB;
+                }
+            }
+            .item.active {
+                background: #5d3ebc;
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+                .title {
+                    color: #ffd300;
+                }
+                .subTitle {
+                    color: #fff;
+                }  
+            }
+            .item:hover {
+                background: #5d3ebc;
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
             }
         }
-        .item.active {
-            background: #5d3ebc;
-            border-top-left-radius: 5px;
-            border-top-right-radius: 5px;
-            .title {
-                color: #ffd300;
+        .right-menu {
+            display: flex;
+            &-item {
+                display: flex;
+                align-items: center;
+                margin-right: 15px;
+                cursor: pointer;
+                &:last-child {
+                    margin-right: 0;
+                }
+                .tw-icon {
+                    margin-right: 5px;
+                }
             }
-            .subTitle {
-                color: #fff;
-            }  
-        }
-        .item:hover {
-            background: #5d3ebc;
-            border-top-left-radius: 5px;
-            border-top-right-radius: 5px;
         }
     }
+
 }
 </style>
