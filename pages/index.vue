@@ -13,14 +13,59 @@
     .container
       .categories-header
         span Kategoriler
+      .categories-list
+          tw-link.categories-list-item(v-for="item in categorieDataList" :key="item.id" :link="item.link")
+            tw-image-card.item-image(:src="item.img")
+            span {{ item.title}}
 </template>
 
 <script>
+import { categorieDataList } from '@/helpers/mocks';
 export default {
   name: 'MainPage',
-
+  setup(){
+    return {
+      categorieDataList,
+    }
+  }
 };
 </script>
-<style lang="scss">
+<style lang="scss" scoped>
+.categories-wrapper {
+  .categories-header {
+    padding: 10px 0 0 10px;
+  }
+  .categories-list {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 15px;
+    font-weight: 700;
+    &-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-right: 15px;
+      padding: 10px 10px 20px;
+      border-radius: 4px;
+      &:last-child {
+        margin-right: 0;
+      }
+      cursor: pointer;
+      &:hover {
+        background: #F3F0FE;
+        color: #5D3EBC;
+      }
+      .item-image {
+        border: 1px solid #F3F0FE;
+        border-radius: 2px;
+        width: 48px;
+        height: 48px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+
 
 </style>
