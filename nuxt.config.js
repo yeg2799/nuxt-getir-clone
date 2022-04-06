@@ -38,7 +38,7 @@ export default {
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: ['@nuxtjs/svg-sprite', '@nuxt/image'],
+  modules: ['@nuxtjs/svg-sprite', '@nuxt/image', '@nuxtjs/toast'],
   svgSprite: {
     input: '~/assets/icons/',
   },

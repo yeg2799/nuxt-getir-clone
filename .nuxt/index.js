@@ -14,6 +14,7 @@ import { setContext, getLocation, getRouteData, normalizeError } from './utils'
 
 import nuxt_plugin_plugin_c9547740 from 'nuxt_plugin_plugin_c9547740' // Source: ./components/plugin.js (mode: 'all')
 import nuxt_plugin_plugin_cda51570 from 'nuxt_plugin_plugin_cda51570' // Source: ./composition-api/plugin.mjs (mode: 'all')
+import nuxt_plugin_toast_48e3cc25 from 'nuxt_plugin_toast_48e3cc25' // Source: ./toast.js (mode: 'client')
 import nuxt_plugin_nuxtsvgsprite_7ffe01d8 from 'nuxt_plugin_nuxtsvgsprite_7ffe01d8' // Source: ./nuxt-svg-sprite.js (mode: 'all')
 import nuxt_plugin_image_67ba7c71 from 'nuxt_plugin_image_67ba7c71' // Source: ./image.js (mode: 'all')
 import nuxt_plugin_component_9f70f064 from 'nuxt_plugin_component_9f70f064' // Source: ../plugins/component.js (mode: 'all')
@@ -188,6 +189,10 @@ async function createApp(ssrContext, config = {}) {
 
   if (typeof nuxt_plugin_plugin_cda51570 === 'function') {
     await nuxt_plugin_plugin_cda51570(app.context, inject)
+  }
+
+  if (process.client && typeof nuxt_plugin_toast_48e3cc25 === 'function') {
+    await nuxt_plugin_toast_48e3cc25(app.context, inject)
   }
 
   if (typeof nuxt_plugin_nuxtsvgsprite_7ffe01d8 === 'function') {

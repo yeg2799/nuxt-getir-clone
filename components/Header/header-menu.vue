@@ -6,15 +6,16 @@
                 span.title getir
                 span.subTitle {{ menu.subTitle}}
         .right-menu
-            .right-menu-item(v-for="menu in rightMenus" :key="menu.id")
+            .right-menu-item(v-for="menu in rightMenus" :key="menu.id" @click="openModal")
                 tw-icon(:icon="menu.icon" size="15")
                 span {{ menu.title }}
 </template>
 
 <script>
-import { useRoute } from '@nuxtjs/composition-api';
+import { useRoute, useContext } from '@nuxtjs/composition-api';
 export default {
     setup() {
+        const { app } = useContext();
         const route = useRoute();
         const menus = [
             {
@@ -66,10 +67,19 @@ export default {
             },
         ];
 
+        const openModal = () => {
+            app.$toast.show("Coming Soon!!", { 
+	            theme: "bubble", 
+	            position: "bottom-center", 
+	            duration : 5000
+            });
+        }
+
         return {
             route,
             menus,
             rightMenus,
+            openModal,
         };
     },
 }

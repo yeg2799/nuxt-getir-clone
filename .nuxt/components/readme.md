@@ -7,8 +7,8 @@ You can directly use them in pages and other components without the need to impo
 **Tip:** If a component is conditionally rendered with `v-if` and is big, it is better to use `Lazy` or `lazy-` prefix to lazy load.
 
 - `<ButtonTwButton>` | `<button-tw-button>` (components/button/tw-button.vue)
-- `<IconTwIcon>` | `<icon-tw-icon>` (components/icon/tw-icon.vue)
-- `<HeaderMenu>` | `<header-menu>` (components/header/header-menu.vue)
-- `<ImageTwImageCard>` | `<image-tw-image-card>` (components/image/tw-image-card.vue)
 - `<LinkGtLink>` | `<link-gt-link>` (components/link/gt-link.vue)
+- `<ImageTwImageCard>` | `<image-tw-image-card>` (components/image/tw-image-card.vue)
+- `<IconTwIcon>` | `<icon-tw-icon>` (components/icon/tw-icon.vue)
 - `<TextFieldTwTextField>` | `<text-field-tw-text-field>` (components/text-field/tw-text-field.vue)
+- `<HeaderMenu>` | `<header-menu>` (components/header/header-menu.vue)
