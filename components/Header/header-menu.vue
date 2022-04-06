@@ -2,70 +2,22 @@
   .header-menu-wrapper
     .container.pl-4.pr-4.header-menu
         .header-menu-item.left-menu
-            gt-link.item(v-for="menu in menus" :key="menu.id" :link="menu.link" :class="{ 'active': route.path === menu.link }")
+            gt-link.item(v-for="menu in leftMenuDataList" :key="menu.id" :link="menu.link" :class="{ 'active': route.path === menu.link }")
                 span.title getir
                 span.subTitle {{ menu.subTitle}}
         .right-menu
-            .right-menu-item(v-for="menu in rightMenus" :key="menu.id" @click="openModal")
+            .right-menu-item(v-for="menu in rightMenuDataList" :key="menu.id" @click="openModal")
                 tw-icon(:icon="menu.icon" size="15")
                 span {{ menu.title }}
 </template>
 
 <script>
 import { useRoute, useContext } from '@nuxtjs/composition-api';
+import { leftMenuDataList, rightMenuDataList } from '@/helpers/mocks';
 export default {
     setup() {
         const { app } = useContext();
         const route = useRoute();
-        const menus = [
-            {
-                id: 0,
-                title: 'getir',
-                subTitle: '',
-                link: '/',
-            },
-            {
-                id: 1,
-                title: 'getir',
-                subTitle: 'yemek',
-                link: '/yemek',
-            },
-            {
-                id: 2,
-                title: 'getir',
-                subTitle: 'büyük',
-                link: '/buyuk',
-            },
-            {
-                id: 3,
-                title: 'getir',
-                subTitle: 'su',
-                link: '/su',
-            },
-            {
-                id: 4,
-                title: 'getir',
-                subTitle: 'çarşı',
-                link: '/carsi',
-            },
-        ];
-        const rightMenus = [
-            {
-                id: 0,
-                icon: 'lang',
-                title: 'Türkçe (TR)',
-            },
-            {
-                id: 1,
-                icon: 'profile',
-                title: 'Giriş Yap',
-            },
-            {
-                id: 2,
-                icon: 'user-add',
-                title: 'Kayıt Ol',
-            },
-        ];
 
         const openModal = () => {
             app.$toast.show("Coming Soon!!", { 
@@ -77,8 +29,8 @@ export default {
 
         return {
             route,
-            menus,
-            rightMenus,
+            leftMenuDataList,
+            rightMenuDataList,
             openModal,
         };
     },

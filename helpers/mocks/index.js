@@ -1,1 +1,1 @@
-export * from './left-menu';
+export * from './menu';
