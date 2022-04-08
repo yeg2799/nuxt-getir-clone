@@ -8,7 +8,7 @@ You can directly use them in pages and other components without the need to impo
 
 - `<ButtonTwButton>` | `<button-tw-button>` (components/button/tw-button.vue)
 - `<HeaderMenu>` | `<header-menu>` (components/header/header-menu.vue)
-- `<LinkGtLink>` | `<link-gt-link>` (components/link/gt-link.vue)
 - `<IconTwIcon>` | `<icon-tw-icon>` (components/icon/tw-icon.vue)
 - `<ImageTwImageCard>` | `<image-tw-image-card>` (components/image/tw-image-card.vue)
+- `<LinkGtLink>` | `<link-gt-link>` (components/link/gt-link.vue)
 - `<TextFieldTwTextField>` | `<text-field-tw-text-field>` (components/text-field/tw-text-field.vue)
