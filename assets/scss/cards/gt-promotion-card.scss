@@ -1,0 +1,43 @@
+.promotion-card-wrapper {
+    margin-top: 20px;
+    width: 100%;
+    color: #fff;
+    .promotion-card {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      position: relative;
+      padding-left: 50px;
+      min-height: 312px;
+      border-radius: 5px;
+      background-color: #5d3ebc;
+      background-image: url('https://getir.com/_next/static/images/doodle-d659f9f1fd505c811c2331fe3ffddd5f.png');
+      .promotion-card-text {
+        .title {
+          font-size: 30px;
+          font-weight: 600;
+        }
+        .description {
+          display: block;
+          margin: 10px 0 30px;
+          font-size: 18px;
+          max-width: 360px;
+        }
+      }
+      &-social-media {
+        display: flex;
+        .social-media-item {
+          margin-right: 10px;
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
+      .promotion-image {
+        position: absolute;
+        width: 600px;
+        bottom: 0;
+        right: 0;
+      }
+    }
+  }

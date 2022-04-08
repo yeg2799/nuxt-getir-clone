@@ -1,10 +1,4 @@
 {
-  "ButtonTwButton": {
-    "description": "Auto imported from components/button/tw-button.vue"
-  },
-  "CarouselGtSlickCarousel": {
-    "description": "Auto imported from components/carousel/gt-slick-carousel.vue"
-  },
   "CardsGtCampaignsCard": {
     "description": "Auto imported from components/cards/gt-campaigns-card.vue"
   },
@@ -14,14 +8,23 @@
   "CardsGtProductCard": {
     "description": "Auto imported from components/cards/gt-product-card.vue"
   },
+  "CardsGtPromotionCard": {
+    "description": "Auto imported from components/cards/gt-promotion-card.vue"
+  },
+  "CarouselGtSlickCarousel": {
+    "description": "Auto imported from components/carousel/gt-slick-carousel.vue"
+  },
+  "ButtonTwButton": {
+    "description": "Auto imported from components/button/tw-button.vue"
+  },
+  "IconTwIcon": {
+    "description": "Auto imported from components/icon/tw-icon.vue"
+  },
   "HeaderMenu": {
     "description": "Auto imported from components/header/header-menu.vue"
   },
   "ImageTwImageCard": {
     "description": "Auto imported from components/image/tw-image-card.vue"
-  },
-  "IconTwIcon": {
-    "description": "Auto imported from components/icon/tw-icon.vue"
   },
   "LinkGtLink": {
     "description": "Auto imported from components/link/gt-link.vue"
