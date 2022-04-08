@@ -1,9 +1,9 @@
 .info-card-wrapper {
-    margin-top: 20px;
+    margin-top: 80px;
     margin-bottom: 40px;
     .info-card {
-        display: flex;
-        flex-direction: row;
+        display: grid;
+        grid-auto-flow: column;
         .info-card-item {
             background: #fff;
             padding: 60px 40px;

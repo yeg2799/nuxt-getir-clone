@@ -5,8 +5,8 @@
       font-weight: 700;
     }
     .categories-list {
-      display: flex;
-      flex-wrap: wrap;
+      display: grid;
+      grid-template-columns: repeat(10, 1fr);
       font-size: 15px;
       font-weight: 700;
       .gt-link {
