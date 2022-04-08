@@ -1,6 +1,15 @@
 {
+  "CardsGtCategoriesCard": {
+    "description": "Auto imported from components/cards/gt-categories-card.vue"
+  },
+  "CardsGtProductCard": {
+    "description": "Auto imported from components/cards/gt-product-card.vue"
+  },
   "ButtonTwButton": {
     "description": "Auto imported from components/button/tw-button.vue"
+  },
+  "CarouselGtSlickCarousel": {
+    "description": "Auto imported from components/carousel/gt-slick-carousel.vue"
   },
   "HeaderMenu": {
     "description": "Auto imported from components/header/header-menu.vue"

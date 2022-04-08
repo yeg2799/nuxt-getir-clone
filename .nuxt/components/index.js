@@ -1,4 +1,7 @@
+export { default as CardsGtCategoriesCard } from '../../components/cards/gt-categories-card.vue'
+export { default as CardsGtProductCard } from '../../components/cards/gt-product-card.vue'
 export { default as ButtonTwButton } from '../../components/button/tw-button.vue'
+export { default as CarouselGtSlickCarousel } from '../../components/carousel/gt-slick-carousel.vue'
 export { default as HeaderMenu } from '../../components/header/header-menu.vue'
 export { default as IconTwIcon } from '../../components/icon/tw-icon.vue'
 export { default as ImageTwImageCard } from '../../components/image/tw-image-card.vue'
