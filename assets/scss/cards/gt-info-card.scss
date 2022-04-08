@@ -1,0 +1,39 @@
+.info-card-wrapper {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    .info-card {
+        display: flex;
+        flex-direction: row;
+        .info-card-item {
+            background: #fff;
+            padding: 60px 40px;
+            margin-right: 20px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            &:last-child {
+                margin-right: 0;
+            }
+            .info-card-image {
+                img {
+                    width: 150px;
+                    height: 150px;
+                }
+            }
+            .info-card-title {
+                font-size: 17px;
+                font-weight: 700;
+                color: #5C3EBC;
+                margin: 10px 0;
+            }
+            .info-card-description {
+                text-align: center;
+                color: #697488;
+                font-size: 15px;
+            }
+        }
+    }
+
+
+}
