@@ -25,4 +25,4 @@ export default {
 }
 </script>
 
-<style src="./gt-categories-card.scss" lang="scss" />
+<style src="@/assets/scss/cards/gt-categories-card.scss" lang="scss" />
