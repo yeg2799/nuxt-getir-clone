@@ -1,17 +1,20 @@
 <template lang="pug">
   .layout(:style="{ height: `${layoutHeight}px` }")
     header-menu
-    Nuxt
+    Nuxt 
+    gt-footer
 </template>
 
 <script>
 import { onMounted, ref, onUnmounted } from '@nuxtjs/composition-api';
 import HeaderMenu from '@/components/header/header-menu.vue';
+import GtFooter from '@/components/footer/gt-footer.vue';
 
 export default {
   middleware: 'main',
   components: {
     HeaderMenu,
+    GtFooter,
   },
   setup() {
     const layoutHeight = ref('');

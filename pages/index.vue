@@ -39,9 +39,7 @@ export default {
 </script>
 <style lang="scss">
 .gt-main-page {
-  height: 47.5px;
-
-
+  margin-top: 47.5px;
 }
 
 
