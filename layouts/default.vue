@@ -1,7 +1,7 @@
 <template lang="pug">
   .layout(:style="{ height: `${layoutHeight}px` }")
     header-menu
-    Nuxt 
+    Nuxt.default 
     gt-footer
 </template>
 
@@ -75,5 +75,8 @@ body {
   @media screen and (min-width: 1200px) {
     max-width: 1280px !important;
   }
+}
+.default {
+  margin-top: 47.5px;
 }
 </style>

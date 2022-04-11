@@ -23,6 +23,7 @@ export default {
   plugins: [
     '@/plugins/component.js',
     '@/plugins/vue-slick-carousel.js',
+    '@/plugins/vue-video-player.js',
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components

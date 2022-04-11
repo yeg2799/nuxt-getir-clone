@@ -29,7 +29,7 @@ props: {
         default: true,
     },
     autoPlaySpeed: {
-        type: String,
+        type: Number,
         default: 3000,
     },
 }

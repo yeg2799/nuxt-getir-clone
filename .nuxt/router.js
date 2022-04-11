@@ -6,6 +6,7 @@ import scrollBehavior from './router.scrollBehavior.js'
 
 const _31803e24 = () => interopDefault(import('../node_modules/@nuxtjs/svg-sprite/lib/pages/icons-list.vue' /* webpackChunkName: "" */))
 const _1a811490 = () => interopDefault(import('../pages/index' /* webpackChunkName: "" */))
+const _d5029e40 = () => interopDefault(import('../pages/food' /* webpackChunkName: "" */))
 
 const emptyFn = () => {}
 
@@ -26,6 +27,10 @@ export const routerOptions = {
     path: "/",
     component: _1a811490,
     name: "main-page"
+  }, {
+    path: "/yemek",
+    component: _d5029e40,
+    name: "food-page"
   }],
 
   fallback: false

@@ -8,6 +8,11 @@ module.exports = {
         path: '/',
         component: resolve('pages/index'),
       },
+      {
+        name: 'food-page',
+        path: '/yemek',
+        component: resolve('pages/food'),
+      },
     );
   },
 };

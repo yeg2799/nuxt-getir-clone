@@ -1,6 +1,12 @@
 {
+  "FooterGtFooter": {
+    "description": "Auto imported from components/footer/gt-footer.vue"
+  },
   "ButtonTwButton": {
     "description": "Auto imported from components/button/tw-button.vue"
+  },
+  "CarouselGtSlickCarousel": {
+    "description": "Auto imported from components/carousel/gt-slick-carousel.vue"
   },
   "CardsGtCampaignsCard": {
     "description": "Auto imported from components/cards/gt-campaigns-card.vue"
@@ -17,23 +23,17 @@
   "CardsGtPromotionCard": {
     "description": "Auto imported from components/cards/gt-promotion-card.vue"
   },
-  "FooterGtFooter": {
-    "description": "Auto imported from components/footer/gt-footer.vue"
-  },
-  "CarouselGtSlickCarousel": {
-    "description": "Auto imported from components/carousel/gt-slick-carousel.vue"
-  },
-  "HeaderMenu": {
-    "description": "Auto imported from components/header/header-menu.vue"
+  "IconTwIcon": {
+    "description": "Auto imported from components/icon/tw-icon.vue"
   },
   "ImageTwImageCard": {
     "description": "Auto imported from components/image/tw-image-card.vue"
   },
-  "IconTwIcon": {
-    "description": "Auto imported from components/icon/tw-icon.vue"
-  },
   "LinkGtLink": {
     "description": "Auto imported from components/link/gt-link.vue"
+  },
+  "HeaderMenu": {
+    "description": "Auto imported from components/header/header-menu.vue"
   },
   "TextFieldTwTextField": {
     "description": "Auto imported from components/text-field/tw-text-field.vue"
